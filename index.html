@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Jokes</title>
+    <style>
+        #joke-form {
+            display: table;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .input-group {
+            display: table-row;
+        }
+
+        .input-label {
+            display: table-cell;
+            padding-right: 10px;
+        }
+
+        .input-field {
+            display: table-cell;
+        }
+
+        .submit-group {
+            display: table-row;
+            text-align: center;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 26px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="joke-form">
+        <form action="/" method="post">
+            <div class="input-group">
+                <div class="input-label"><h1>Select the joke type</h1></div>
+                <div class="input-field">
+                    <select name="category" id="type">
+                        <option value="Any">Any</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Pun">Pun</option>
+                        <option value="Spooky">Spooky</option>
+                        <option value="Christmas">Christmas</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-label"><h1>Select Language</h1></div>
+                <div class="input-field">
+                    <select name="lang" id="">
+                        <option value="en">en - english</option>
+                        <option value="es">es - spanish</option>
+                        <option value="de">de - german</option>
+                        <option value="fr">fr - french</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-label"><h1>Select Flags to blacklist</h1></div>
+                <div class="input-field">
+                    <input type="checkbox" name="nsfw"> 
+                    <label for="nsfw">nsfw</label> 
+                    <input type="checkbox" name="religious">
+                    <label for="religious">religious</label>
+                    <input type="checkbox" name="political">
+                    <label for="political">political</label>
+                    <input type="checkbox" name="racist">
+                    <label for="racist">racist</label>
+                    <!-- <input type="checkbox" name="sexist"> -->
+                    <!-- <label for="sexist">sexist</label> -->
+                    <input type="checkbox" name="explicit">
+                    <label for="explicit">explicit</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-label"><h1>Select type of joke</h1></div>
+                <div class="input-field">
+                    <input type="radio" name="type" value="single">
+                    <label for="single">Single</label>
+                    <input type="radio" name="type" value="twopart">
+                    <label for="twopart">Two Part</label>
+                    <input type="radio" name="type" value="both">
+                    <label for="both">Both</label>
+                </div>
+            </div>
+            <div class="submit-group">
+                <div >
+                    <input class="submit-button" type="submit" value="Get Joke">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

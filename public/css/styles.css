@@ -1,0 +1,39 @@
+#joke-form {
+    display: table;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.input-group {
+    display: table-row;
+}
+
+.input-label {
+    display: table-cell;
+    padding-right: 10px;
+}
+
+.input-field {
+    display: table-cell;
+}
+
+.submit-group {
+    display: table-row;
+    text-align: center;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 26px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #3e8e41;
+}
